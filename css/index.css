@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;800&display=swap");
+:root {
+  --accent-color: #2064fe;
+  --font-color: #161719;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montsserat", sans-serif;
+  font-size: 16px;
+  color: var(--font-color);
+  padding: 0;
+  margin: 0;
+}
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+section {
+  margin-bottom: 50px;
+}
+.section-header {
+  text-align: center;
+  font-size: 30px;
+}
+img {
+  max-width: 300px;
+}
+a {
+  text-decoration: none;
+  color: var(--font-color);
+}
+a:hover {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+.foreheader {
+  font-size: 0.9em;
+}
+.foreheader .foreheader-block {
+    padding: 10px 15px;
+  }
+
+.header-block {
+  padding: 20px 15px;
+}
+  .header-block .menu {
+    display: none;
+  }
+/* burger menu */
+#burger-checkbox {
+  display: none;
+}
+.burger-icon {
+  color: var(--accent-color);
+  font-weight: 700;
+}
+.btn-call-me {
+  display: block;
+}
+.header-block input:checked ~ .menu {
+  display: block;
+}
+
+.header-block .menu a {
+  border: 1px solid transparent;
+}
+.header-block .btn {
+  align-self: center;
+}
+.logo a {
+  font-size: 30px;
+}
+.logo span {
+  font-size: 14px;
+}
+.menu a {
+  padding: 5px;
+}
+button:active,
+button:focus {
+  outline: none;
+}
+.btn {
+  background-color: var(--accent-color);
+  color: #fff;
+  padding: 15px 40px;
+  border: none;
+  transition: all 0.7s;
+  text-align: center;
+}
+.btn:hover {
+  background-color: rgba(36, 33, 235, 0.897);
+}
+h1 {
+  font-weight: 1000;
+  font-size: 60px;
+  color: #fff;
+}
+.h1-paragraph {
+  color: #fff;
+  font-size: 1.5em;
+}
+.banner {
+  padding-top: 250px;
+  padding-bottom: 250px;
+  padding-left: 15px;
+  background-image: url(../img/index/banner.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+.features p {
+  text-align: center;
+}
+
+.features-item {
+  background: var(--accent-color);
+  color: #fff;
+  margin-left: 40px;
+  padding: 20px;
+}
+.features-item img {
+  width: 100%;
+  
+}
+
+@media (min-width: 320px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;      
+  }
+  .foreheader {
+    order: 2;
+    background-color: #fff;
+  }
+ 
+  .foreheader .foreheader-block a {
+    display: block;
+    margin-top: 5px;
+  }
+  .header-block .menu a {
+    display: block;
+  }
+  .header-block .menu a:hover {
+    border: 1px solid var(--accent-color);
+  }
+  .features-block {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+  @media (min-width: 550px) {
+    .features-block {
+      grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: 769px) {
+   header {
+    display: block; 
+  }
+  .foreheader {
+    background-color: #f6f6f6;
+  }
+  .foreheader .foreheader-block, .header-block, .header-block #burger-checkbox ~ .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header-block .menu a:hover {
+    border: 1px solid transparent;
+  }
+  .header-block .menu a::after {
+    content: "|";
+    margin-left: 20px;
+    color: rgba(0, 0, 0, 0.2);
+  }
+  .header-block .menu a:last-child::after {
+    content: none;
+}
+  .burger-icon {
+    display: none;
+  }
+  .features-block {
+    grid-template-columns: 1fr 1fr 1fr;
+    
+  }
+
+
+@media (min-width: 992px) {
+   .features-block {
+    grid-template-columns: repeat(4,1fr);
+    
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .features-block {
+    grid-template-columns: repeat(5,1fr);
+    
+}
+}

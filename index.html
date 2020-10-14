@@ -1,1 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Steve Rock</title>
+    <link rel="icon" href="img/favicon/favicon-32x32.png" />
+    
+    <link rel="stylesheet" href="css/index.css" />
+</head>
 
+<body>
+    <header>
+        <div class="foreheader">
+            <div class="container">
+                <nav class="foreheader-block"> 
+                <span>Open 8 am - 8 pm</span>
+                <a href="tel:+12345678900">+1 (234) 567 89 00</a>
+                <a href="mailto:steve.rock@email.com">steve.rock@email.com</a>
+                </nav>
+            </div>
+        </div>
+        <div class="header">
+            <div class="container">
+                <div class="header-block">
+                    <div class="logo">
+                        <a href="index.html">
+                            <strong>Steve Rock</strong>
+                            <br />
+                            <span>Personal Powerlifting Trainer</span>
+                        </a>
+                    </div>
+                    <label class="burger-icon" for="burger-checkbox">☰ MENU</label>
+                    <input type="checkbox" id="burger-checkbox">
+                    <nav class="menu">
+                        <a href="about.html">About</a>
+                        <a href="programs.html">Programs</a>
+                        <a href="#courses">Courses</a>
+                        <a href="services.html">Services</a>
+                        <a href="results.html">Results</a>
+                        <a href="contacts.html">Contacts</a>  
+                    </nav>
+                    <button class="btn btn-call-me" onclick="window.location.href = 'tel:+12345678900';">CALL
+                        ME</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="banner">
+            <div class="container">
+                <h1>
+                    Steve Rock: <br>  Healthy Body -<br />
+                    Healthy Life!
+                </h1>
+                <p class="h1-paragraph">The best personal powerlifting trainer in NYC</p>
+                <button class="btn" onclick="window.location.href = '#';">BOOK A FREE TRAINING</button>
+            </div>
+        </section>
+        <section class="features">
+            <div class="container">
+                <h2 class="section-header">Stay Fit and Healthy</h2>
+                <p>Make a step towards a healthier lifestyle and get personalized fitness solutions from a professional
+                    powerlifting trainer.</p>
+                <div class="features-block">
+                    <div class="features-item">
+                        <img src="img/svg/body-harmonic.svg" alt="body-harmonic" />
+                        <p>Make Your Body Harmonic</p>
+                    </div>
+                    <div class="features-item">
+                        <img src="img/svg/optimal-diet.svg" alt="optimal-diet" />
+                        <p>Optimal Diet Selection</p>
+                    </div>
+                    <div class="features-item">
+                        <img src="img/svg/individual-training.svg" alt="individual-training" />
+                        <p>Individual Training Programs</p>
+                    </div>
+                    <div class="features-item">
+                        <img src="img/svg/group-n-personal.svg" alt="" />
+                        <p>Group &Personal Trainings</p>
+                    </div>
+                    <div class="features-item">
+                        <img src="img/svg/weight-loss.svg" alt="" />
+                        <p>Weight Loss Program</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="programs">
+            <div class="container">
+                <h2 class="section-header">Programs</h2>
+                <div class="programs-block">
+                    <div class="programs-item">
+                        <img src="img/index/dumbbell.jpeg" alt="dumbbell" />
+                        <button class="btn" onclick="window.location.href = '#';">Personal Training</button>
+                    </div>
+                    <div class="programs-item">
+                        <img src="img/index/squat.jpeg" alt="squat" />
+                        <button class="btn" onclick="window.location.href = '#';">Small Group Classes</button>
+                    </div>
+                    <div class="programs-item">
+                        <img src="img/index/drinking-water.jpeg" alt="drinking-water" />
+                        <button class="btn" onclick="window.location.href = '#';">Nutrition Coaching</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="courses" id="courses">
+            <div class="container">
+                <h2 class="section-header">Courses</h2>
+                <div class="courses-block">
+                    <article class="courses-block-item">
+                        <h3>Bikini &Body</h3>
+                        <span>12 weeks</span>
+                        <br />
+                        <button class="btn btn-black" onclick="window.location.href = '#';">LEARN MORE</button>
+                    </article>
+                    <article class="courses-block-item">
+                        <h3>Weight Loss</h3>
+                        <span>18 weeks</span>
+                        <br />
+                        <button class="btn btn-black" onclick="window.location.href = '#';">LEARN MORE</button>
+                    </article>
+                    <article class="courses-block-item">
+                        <h3>Fit &Healthy</h3>
+                        <span>17 weeks</span>
+                        <br />
+                        <button class="btn btn-black" onclick="window.location.href = '#';">LEARN MORE</button>
+                    </article>
+                    <article class="courses-block-item">
+                        <h3>Muscle Building</h3>
+                        <span>15 weeks</span>
+                        <br />
+                        <button class="btn btn-black" onclick="window.location.href = '#';">LEARN MORE</button>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="pricing">
+            <div class="container">
+                <h2 class="section-header" id="pricing-header">Pricing Plans</h2>
+                <div class="pricing-block">
+                    <article class="pricing-block-item">
+                        <h3>Light</h3>
+                        <p>
+                            <span class="price">149$</span>
+                            <br />
+                            per month<br />
+                            1 Program<br />
+                            4 Sessions (60 min each)<br />
+                            Full Evaluation<br />
+                            Nutritional Supplements
+                        </p>
+                        <button class="btn" onclick="window.location.href = '#';">CHOOSE PLAN</button>
+                    </article>
+                    <article class="pricing-block-item">
+                        <h3>Intence</h3>
+                        <p>
+                            <span class="price">179$</span>
+                            <br />
+                            per month<br />
+                            1 Program<br />
+                            8 Sessions (60 min each)<br />
+                            Full Evaluation<br />
+                            Nutritional Supplements
+                        </p>
+                        <button class="btn" onclick="window.location.href = '#';">CHOOSE PLAN</button>
+                    </article>
+                    <article class="pricing-block-item">
+                        <h3>Ultra Intence</h3>
+                        <p>
+                            <span class="price">219$</span>
+                            <br />
+                            per month<br />
+                            w Program<br />
+                            12 Sessions (60 min each)<br />
+                            Full Evaluation<br />
+                            Nutritional Supplements
+                        </p>
+                        <button class="btn" onclick="window.location.href = '#';">CHOOSE PLAN</button>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="personal-training-services">
+            <div class="container">
+                <h2 class="section-header">Personal Training Services</h2>
+                <div class="training-services-block">
+                    <article class="training-services-item">
+                        <img src="img/index/service-coaching.jpeg" alt="service-coaching" />
+                        <h3>Coaching</h3>
+                        <p>I will instruct you how to do every exercise correctly to get maximum results and minimize
+                            the risk of injuries.</p>
+                        <a href="#">READ MORE</a>
+                    </article>
+                    <article class="training-services-item">
+                        <img src="img/index/service-custom.jpeg" alt="service-custom" />
+                        <h3>Custom Planning</h3>
+                        <p>I strive to develop each training plan to meet your particular goals and to achieve long-term
+                            results.</p>
+                        <a href="#">READ MORE</a>
+                    </article>
+                    <article class="training-services-item">
+                        <img src="img/index/service-organization.jpeg" alt="service-organization" />
+                        <h3>Organization</h3>
+                        <p>Every training session is organized and scheduled before your appointment to inform you what
+                            to do when you arrive at the gym.</p>
+                        <a href="#">READ MORE</a>
+                    </article>
+                    <article class="training-services-item">
+                        <img src="img/index/service-analisys.jpeg" alt="service-analisys" />
+                        <h3>Analysis</h3>
+                        <p>I make a deep analysis of your body and health condition to better understand your potential
+                            and help achieve your fitness goals.</p>
+                        <a href="#">READ MORE</a>
+                    </article>
+                    <article class="training-services-item">
+                        <img src="img/index/service-research.jpeg" alt="service-research" />
+                        <h3>Research</h3>
+                        <p>I strive to keep up to date with the latest technologies and put them into practice to get
+                            better results.</p>
+                        <a href="#">READ MORE</a>
+                    </article>
+                    <article class="training-services-item">
+                        <img src="img/index/service-measurements.jpeg" alt="service-measurements" />
+                        <h3>Results Measurement</h3>
+                        <p>Regardless of the chosen program, I will provide you with a detailed progress report every 4
+                            weeks.</p>
+                        <a href="#">READ MORE</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="benefits">
+            <div class="container">
+                <div class="benefits-block">
+                    <article class="benefits-block-list">
+                        <h2 class="section-header">Benefits of Personal Training</h2>
+                        <h3>What to expect</h3>
+                        <ul>
+                            <li class="benefits-list-item">Improved Coordination</li>
+                            <li class="benefits-list-item">Decreased Body Fat Stores</li>
+                            <li class="benefits-list-item">Enhanced Immune System</li>
+                            <li class="benefits-list-item">Decreased Total Cholesterol</li>
+                            <li class="benefits-list-item">Reduction in Blood Pressure</li>
+                            <li class="benefits-list-item">Strengthened Skeletal System</li>
+                            <li class="benefits-list-item">Improved Cardiovascular Fitness</li>
+                            <li class="benefits-list-item">Increased Energy, Stamina &Endurance</li>
+                            <li class="benefits-list-item">Increased Muscle Strength, Endurance &Tone</li>
+                            <li class="benefits-list-item">Decreased Clinical Symptoms of Depression</li>
+                            <li class="benefits-list-item">Decreased Clinical Symptoms of Anxiety, Stress, Tension</li>
+                        </ul>
+                    </article>
+                    <div class="benefits-block-image">
+                        <img src="img/index/benefits.jpeg" alt="benefits" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="first-step">
+            <div class="container">
+                <div class="first-step-block">
+                    <h2 class="section-header">Take your first step to the body of your dreams</h2>
+                    <button class="btn" onclick="window.location.href = '#';">GET STARTED</button>
+                </div>
+            </div>
+        </section>
+        <section class="whoiam">
+            <div class="container">
+                <div class="whoiam-block">
+                    <div class="whoiam-block-image">
+                        <img src="img/index/whoiam.jpeg" alt="whoiam" />
+                    </div>
+                    <article class="whoiam-block-text">
+                        <h2 class="section-header">Who I Am</h2>
+                        <h3>I am a personal fitness trainer and best-selling fitness author</h3>
+                        <p>
+                            I am an expert certified personal fitness coach with a passion for a healthy lifestyle,
+                            healthy nutrition, and intensive daily training. I am happy to have a chance to help people
+                            transform their bodies and
+                            lives.
+                        </p>
+                        <div class="social-media">
+                            <span>Follow Us:</span>
+                            <nav>
+                                <a href="">
+                                    <img src="img/svg/facebook.svg" alt="" />
+                                </a>
+                                <a href="">
+                                    <img src="img/svg/instagram.svg" alt="" />
+                                </a>
+                                <a href="">
+                                    <img src="img/svg/youtube.svg" alt="" />
+                                </a>
+                            </nav>
+                            <button class="btn" onclick="window.location.href = '#';">READ MORE</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="reviews">
+            <div class="container">
+                <div class="review-slide-text">
+                    <h2 class="section-header">What My Clients Say (SLIDER)</h2>
+                    <p>"Steve stimulates everybody to reveal their full potential. I have seen amazing results over the
+                        last several weeks! His nutritional advice is also very helpful. Thanks a lot!"</p>
+                    <p>Kate Holmes</p>
+                </div>
+                <div class="review-slide-image">
+                    <img src="img/index/kate-holmes.jpeg" alt="kate-holmes" />
+                </div>
+            </div>
+        </section>
+        <section class="30days">
+            <div class="container">
+                <h2 class="section-header">Take a 30-Day Total Body Challenge (SLIDER)</h2>
+                <div class="slider-block-30">
+                    <img src="img/index/30-days-armwrestle.jpeg" alt="30-days-armwrestle" />
+                    <img src="img/index/30-days-abs.jpeg" alt="30-days-abs" />
+                    <img src="img/index/30-days-biceps.jpeg" alt="30-days-biceps" />
+                    <img src="img/index/30-days-dumbbell.jpeg" alt="30-days-dumbbell" />
+                    <img src="img/index/30-days-pump.jpeg" alt="30-days-pump" />
+                    <img src="img/index/30-days-pump.jpeg" alt="30-days-pump" />
+                </div>
+                <button class="btn" onclick="window.location.href = '#';">JOIN THE CHALLENGE</button>
+            </div>
+        </section>
+        <section class="before-after">
+            <div class="container">
+                <h2 class="section-header">Real People, Real Results (COMPARE SLIDER)</h2>
+                <div class="before-after-block">
+                    <div class="before-after-man">
+                        <img src="img/index/man-after.jpeg" alt="man-after" />
+                    </div>
+                    <div class="before-after-woman">
+                        <img src="img/index/woman-after.jpeg" alt="woman-after" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="trial-version">
+            <div class="container">
+                <div class="trial-version-block">
+                    <h2 class="section-header" id="trial-version-header">Get Trial Version of Muscle Building Program
+                    </h2>
+                    <p id="trial-version-p">Get a free trial version of Muscle Building Program! This two-stage program
+                        is tailored to build muscle through the right balance of mass-building exercises.</p>
+                    <button class="btn" onclick="window.location.href = '#';">DOWNLOAD FOR FREE</button>
+                </div>
+            </div>
+        </section>
+        <section class="my-book">
+            <div class="container">
+                <div class="my-book-block">
+                    <div class="my-book-block-image">
+                        <img src="img/index/my-book.png" alt="my-book" />
+                    </div>
+                    <article class="my-book-block-text">
+                        <h2 class="section-title">My Book</h2>
+                        <h3>The Muscle &Strength Pyramids: Training &Nutrition</h3>
+                        <p>This book is written for those who have physical training experience, live a healthy
+                            lifestyle, eat healthy food, and most likely are bodybuilding or powerlifting athletes.</p>
+                        <button class="btn" onclick="window.location.href = '#';">BUY NOW</button>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="instagram">
+            <div class="container">
+                <h2 class="section-header">Follow My Instagram @steverock</h2>
+                <div class="instagram-block">
+                    <div class="instagram-photo">
+                        <img src="img/index/follow-photo-1.jpeg" alt="follow-photo-1" />
+                    </div>
+                    <div class="instagram-photo">
+                        <img src="img/index/follow-photo-2.jpeg" alt="follow-photo-2" />
+                    </div>
+                    <div class="instagram-photo">
+                        <img src="img/index/follow-photo-3.jpeg" alt="follow-photo-3" />
+                    </div>
+                    <div class="instagram-photo">
+                        <img src="img/index/follow-photo-4.jpeg" alt="follow-photo-4" />
+                    </div>
+                </div>
+                <button class="btn" onclick="window.location.href = '#';">FOLLOW ME</button>
+            </div>
+        </section>
+        <section class="contacts">
+            <div class="container">
+                <h2 class="section-header">Contacts</h2>
+                <div class="contacts-block">
+                    <article class="contacts-block-item">
+                        <img src="img/svg/location.svg" alt="" />
+                        <h3>My Location</h3>
+                        <p>123 New York, NY 60606</p>
+                    </article>
+                    <article class="contacts-block-item">
+                        <img src="img/svg/phone.svg" alt="" />
+                        <h3>My Phone</h3>
+                        <a href="tel:+12345678900">+1 (234) 567 89 00</a>
+                    </article>
+                    <article class="contacts-block-item">
+                        <img src="img/svg/email.svg" alt="" />
+                        <h3>My E-mail</h3>
+                        <a href="mailto:steve.rock@email.com">steve.rock@email.com</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="stay-in-touch">
+            <div class="container">
+                <div class="stay-in-touch-block">
+                    <h2 class="">Stay in touch</h2>
+                    <p>If you need a personal powerlifting trainer, expert advice, or a healthy product review, please
+                        feel free to contact me.</p>
+                    <form action="https://formspree.io/f/mpzoqbyd" method="POST" class="contacts-form">
+                        <input type="text" placeholder="Enter your full name*" required />
+                        <br />
+                        <input type="text" placeholder="Enter your e-mail*" required />
+                        <br />
+                        <textarea id="w3review" name="w3review" rows="4" cols="20"></textarea>
+                        <br />
+                        <input type="submit" value="SUBMIT" />
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-block">
+                <div class="footer-block-item">
+                    <div class="logo">
+                        <a href="index.html">
+                            <strong>Steve Rock</strong>
+                        </a>
+                        <br />
+                        <span>Personal Powerlifting Trainer</span>
+                    </div>
+                </div>
+                <div class="footer-block-item">
+                    <nav>
+                        <a href="about.html">About</a>
+                        <br />
+                        <a href="courses.html">Courses</a>
+                        <br />
+                        <a href="results.html">Results</a>
+                    </nav>
+                </div>
+                <div class="footer-block-item">
+                    <nav>
+                        <a href="programs.html">Programs</a>
+                        <br />
+                        <a href="services.html">Services</a>
+                        <br />
+                        <a href="contacts.html">Contacts</a>
+                    </nav>
+                </div>
+                <div class="footer-block-item">
+                    <form action="https://formspree.io/f/mpzoqbyd" method="POST">
+                        <input type="text" placeholder="e-mail*" required />
+                        <input type="submit" value="SUBSCRIBE" />
+                    </form>
+                </div>
+            </div>
+            <hr />
+            <p class="footer-paragraph">© Created by Stas</p>
+            <p class="footer-paragraph">All rights reserved</p>
+        </div>
+    </footer>
+</body>
+</html>
