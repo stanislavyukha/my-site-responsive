@@ -24,7 +24,7 @@ section {
   font-size: 30px;
 }
 img {
-  max-width: 300px;
+  width: 400px;
 }
 a {
   text-decoration: none;
@@ -48,6 +48,9 @@ a:hover {
   display: none;
 }
 /* burger menu */
+.hided {
+  display: none;
+}
 #burger-checkbox {
   display: none;
 }
@@ -55,10 +58,10 @@ a:hover {
   color: var(--accent-color);
   font-weight: 700;
 }
-.btn-call-me {
+.burger-checkbox:checked ~ * .hided {
   display: block;
 }
-.header-block input:checked ~ .menu {
+.btn-call-me {
   display: block;
 }
 
@@ -87,7 +90,6 @@ button:focus {
   padding: 15px 40px;
   border: none;
   transition: all 0.7s;
-  text-align: center;
 }
 .btn:hover {
   background-color: rgba(36, 33, 235, 0.897);
@@ -119,19 +121,28 @@ h1 {
   margin-left: 40px;
   padding: 20px;
 }
-.features-item img {
+.features-item img,
+.programs-item img {
   width: 100%;
+  height: auto;
+  display: block;
+}
+.programs-item {
+  text-align: center;
+}
+.programs-item img {
+  margin-bottom: -20px;
 }
 
 @media (min-width: 320px) {
   header {
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: flex-start;
   }
   .foreheader {
-    order: 2;
+    order: 1;
     background-color: #fff;
   }
 
@@ -145,16 +156,18 @@ h1 {
   .header-block .menu a:hover {
     border: 1px solid var(--accent-color);
   }
-  .features-block {
+  .features-block,
+  .programs-block {
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 20px;
-    align-items: center;
+    grid-gap: 30px;
     justify-items: center;
+    align-items: stretch;
   }
 }
 @media (min-width: 550px) {
-  .features-block {
+  .features-block,
+  .programs-block {
     grid-template-columns: 1fr 1fr;
   }
 }
@@ -168,7 +181,7 @@ h1 {
   }
   .foreheader .foreheader-block,
   .header-block,
-  .header-block #burger-checkbox ~ .menu {
+  .header-block .menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -187,8 +200,9 @@ h1 {
   .burger-icon {
     display: none;
   }
-  .features-block {
-    grid-template-columns: 1fr 1fr 1fr;
+  .features-block,
+  .programs-block {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
