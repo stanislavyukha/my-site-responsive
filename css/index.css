@@ -38,15 +38,15 @@ a:hover {
   font-size: 0.9em;
 }
 .foreheader .foreheader-block {
-    padding: 10px 15px;
-  }
+  padding: 10px 15px;
+}
 
 .header-block {
   padding: 20px 15px;
 }
-  .header-block .menu {
-    display: none;
-  }
+.header-block .menu {
+  display: none;
+}
 /* burger menu */
 #burger-checkbox {
   display: none;
@@ -121,7 +121,6 @@ h1 {
 }
 .features-item img {
   width: 100%;
-  
 }
 
 @media (min-width: 320px) {
@@ -129,13 +128,13 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: start;
-    align-items: flex-start;      
+    align-items: flex-start;
   }
   .foreheader {
     order: 2;
     background-color: #fff;
   }
- 
+
   .foreheader .foreheader-block a {
     display: block;
     margin-top: 5px;
@@ -150,20 +149,26 @@ h1 {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 20px;
+    align-items: center;
+    justify-items: center;
   }
-  @media (min-width: 550px) {
-    .features-block {
-      grid-template-columns: 1fr 1fr;
+}
+@media (min-width: 550px) {
+  .features-block {
+    grid-template-columns: 1fr 1fr;
   }
+}
 
-  @media (min-width: 769px) {
-   header {
-    display: block; 
+@media (min-width: 769px) {
+  header {
+    display: block;
   }
   .foreheader {
     background-color: #f6f6f6;
   }
-  .foreheader .foreheader-block, .header-block, .header-block #burger-checkbox ~ .menu {
+  .foreheader .foreheader-block,
+  .header-block,
+  .header-block #burger-checkbox ~ .menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -178,25 +183,22 @@ h1 {
   }
   .header-block .menu a:last-child::after {
     content: none;
-}
+  }
   .burger-icon {
     display: none;
   }
   .features-block {
     grid-template-columns: 1fr 1fr 1fr;
-    
   }
-
+}
 
 @media (min-width: 992px) {
-   .features-block {
-    grid-template-columns: repeat(4,1fr);
-    
+  .features-block {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
-@media only screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
   .features-block {
-    grid-template-columns: repeat(5,1fr);
-    
-}
+    grid-template-columns: repeat(5, 1fr);
+  }
 }
