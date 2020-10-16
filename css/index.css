@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;800&display=swap");
 :root {
   --accent-color: #2064fe;
+  --accent-color-saturated: #3926d3;
   --font-color: #161719;
   scroll-behavior: smooth;
 }
@@ -8,7 +9,8 @@
 body {
   font-family: "Montsserat", sans-serif;
   font-size: 16px;
-  color: var(--font-color);
+  color: rgba(22, 23, 25, 0.9);
+  font-stretch: ultra-expanded;
   padding: 0;
   margin: 0;
 }
@@ -17,18 +19,33 @@ body {
   margin: 0 auto;
 }
 section {
-  margin-bottom: 50px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 .section-header {
+  margin-top: 0;
   text-align: center;
-  font-size: 30px;
+  font-size: 50px;
+  line-height: 1.2;
 }
-img {
-  width: 400px;
+.section-header::after {
+  display: block;
+  margin: 30px auto;
+  content: "";
+  width: 60px;
+  height: 1px;
+  background-color: var(--font-color);
+  opacity: 0.2;
+}
+.section-header-white {
+  color: #fff;
+}
+.section-header-white::after {
+  background-color: #fff;
 }
 a {
   text-decoration: none;
-  color: var(--font-color);
+  color: rgba(22, 23, 25, 0.9);
 }
 a:hover {
   color: var(--accent-color);
@@ -111,27 +128,130 @@ h1 {
   background-position: center;
   background-size: cover;
 }
-.features p {
-  text-align: center;
+.features {
+  background-color: #f6f6f6;
 }
-
+.features-paragraph {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
 .features-item {
   background: var(--accent-color);
   color: #fff;
-  margin-left: 40px;
-  padding: 20px;
+  padding: 40px;
+  text-align: center;
 }
-.features-item img,
-.programs-item img {
-  width: 100%;
+.features-item img {
+  width: 80%;
   height: auto;
+  margin: 0 auto;
   display: block;
+}
+.programs-courses {
+  background-image: url(../img/index/courses_background.jpeg);
+  background-position: center;
+  background-size: cover;
 }
 .programs-item {
   text-align: center;
+  background-size: cover;
+  margin-bottom: 50px;
 }
-.programs-item img {
-  margin-bottom: -20px;
+.programs-item-bg1 {
+  background-image: url(../img/programs/dambell.jpeg);
+  background-position: -280px 0px;
+}
+.programs-item-bg2 {
+  background-image: url(../img/programs/squat.jpeg);
+  background-position: -155px 0px;
+}
+.programs-item-bg3 {
+  background-image: url(../img/programs/drinking-water.jpeg);
+  background-position: -290px 0px;
+}
+.courses-header {
+  margin-top: 100px;
+}
+.courses-block {
+  padding: 0;
+}
+.courses-block-item {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 50px 30px;
+  line-height: 2;
+}
+.courses-block-item span {
+  color: var(--accent-color);
+  font-weight: bold;
+}
+.courses-block-item .btn-black {
+  margin-top: 20px;
+  background-color: black;
+  border: 2px solid #fff;
+}
+.courses-block-item .btn-black:hover {
+  background-color: #fff;
+  color: #000;
+}
+.pricing {
+  background: url(../img/index/pricing-background.jpeg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.pricing-block-item {
+  color: #fff;
+  background-color: var(--accent-color-saturated);
+  padding: 40px;
+  text-align: center;
+}
+.pricing-block-item span {
+  font-size: 50px;
+}
+.pricing-block-item .btn {
+  background-color: #fff;
+  color: #000;
+  border: none;
+}
+.pricing-block-item .btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+.personal-training-services {
+  background: url(../img/index/training-services-bg.png);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: repeat;
+}
+.training-services-item img,
+.benefits-block img {
+  max-width: 100%;
+}
+.services-read-more {
+  font-weight: bold;
+}
+.benefits-block-image {
+  background-image: url(../img/index/benefits.jpeg);
+  background-size: cover;
+  background-position: 0px 0px;
+}
+.first-step {
+  background: url(/img/index/first-step.jpeg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.first-step-block {
+  padding: 150px 0px 150px 40px;
+}
+.first-step-block h2 {
+  color: #fff;
 }
 
 @media (min-width: 320px) {
@@ -157,62 +277,132 @@ h1 {
     border: 1px solid var(--accent-color);
   }
   .features-block,
-  .programs-block {
+  .programs-block,
+  .courses-block,
+  .pricing-block,
+  .training-services-block,
+  .benefits-block {
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 30px;
+    grid-gap: 20px;
     justify-items: center;
-    align-items: stretch;
-  }
-}
-@media (min-width: 550px) {
-  .features-block,
-  .programs-block {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media (min-width: 769px) {
-  header {
-    display: block;
-  }
-  .foreheader {
-    background-color: #f6f6f6;
-  }
-  .foreheader .foreheader-block,
-  .header-block,
-  .header-block .menu {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
   }
-  .header-block .menu a:hover {
-    border: 1px solid transparent;
+  .features-block {
+    grid-template-columns: 1fr 1fr;
   }
-  .header-block .menu a::after {
-    content: "|";
-    margin-left: 20px;
-    color: rgba(0, 0, 0, 0.2);
+  .programs-item {
+    width: 90%;
+    height: 400px;
   }
-  .header-block .menu a:last-child::after {
-    content: none;
+  .programs-item .btn {
+    width: 80%;
+    margin-top: 360px;
+    padding: 30px 0px;
   }
-  .burger-icon {
-    display: none;
+  .courses-block {
+    justify-items: stretch;
   }
-  .features-block,
-  .programs-block {
-    grid-template-columns: repeat(3, 1fr);
+  .benefits-block,
+  .training-services-block {
+    align-items: start;
   }
+}
+.benefits-block-image {
+  width: 90%;
+  height: 400px;
 }
 
-@media (min-width: 992px) {
-  .features-block {
-    grid-template-columns: repeat(4, 1fr);
+@media (min-width: 550px) {
+  .features-block,
+  .programs-block,
+  .courses-block,
+  .pricing-block,
+  .benefits-block {
+    grid-template-columns: 1fr 1fr;
   }
-}
-@media (min-width: 1200px) {
-  .features-block {
-    grid-template-columns: repeat(5, 1fr);
+  .programs-item {
+    width: 255px;
+    height: 340px;
+  }
+  .programs-item .btn {
+    margin-top: 300px;
+  }
+
+  @media (min-width: 769px) {
+    header {
+      display: block;
+    }
+    .foreheader {
+      background-color: #f6f6f6;
+    }
+    .foreheader .foreheader-block,
+    .header-block,
+    .header-block .menu {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .header-block .menu a:hover {
+      border: 1px solid transparent;
+    }
+    .header-block .menu a::after {
+      content: "|";
+      margin-left: 20px;
+      color: rgba(0, 0, 0, 0.2);
+    }
+    .header-block .menu a:last-child::after {
+      content: none;
+    }
+    .burger-icon {
+      display: none;
+    }
+    .features-block,
+    .programs-block,
+    .courses-block,
+    .pricing-block {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .programs-item {
+      width: 230px;
+    }
+    .programs-item .btn {
+      margin-top: 300px;
+    }
+    .training-services-block {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 992px) {
+    .features-block,
+    .courses-block {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    .programs-item {
+      width: 300px;
+      height: 400px;
+    }
+    .programs-item .btn {
+      margin-top: 370px;
+    }
+    .courses-block {
+      justify-items: stretch;
+    }
+    .training-services-block {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  @media (min-width: 1200px) {
+    .features-block {
+      grid-template-columns: repeat(5, 1fr);
+    }
+    .programs-item {
+      width: 375px;
+      height: 500px;
+    }
+    .programs-item .btn {
+      margin-top: 470px;
+    }
   }
 }
