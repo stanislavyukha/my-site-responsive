@@ -110,10 +110,12 @@ button:focus {
     display: flex;
     justify-content: space-between;
   }
-
+  .navbar-nav {
+    margin-left: 7%;
+  }
   .nav-item .nav-link::after {
     content: "|";
-    margin-left: 7%;
+    margin-left: 20px;
     color: rgba(0, 0, 0, 0.2);
   }
   .nav-item .nav-link-last::after {
