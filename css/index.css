@@ -124,7 +124,7 @@ button:focus {
 }
 h1 {
   font-weight: 1000;
-  font-size: 60px;
+  font-size: 70px;
   color: #fff;
 }
 .h1-paragraph {
@@ -135,9 +135,19 @@ h1 {
   padding-top: 250px;
   padding-bottom: 250px;
   background-image: url(../img/index/banner.jpeg);
-  background-position: center;
   background-size: cover;
 }
+@media (min-width: 320px) {
+  .banner {
+    background-position: center;
+  }
+}
+@media (min-width: 992px) {
+  .banner {
+    background-position: 0px 0px;
+  }
+}
+
 .features {
   background-color: #f6f6f6;
 }
@@ -340,6 +350,9 @@ h1 {
   padding: 70px;
   text-align: center;
 }
+.pricing-block-item h3 {
+  font-size: 1.5em;
+}
 .pricing-block-item span {
   font-size: 50px;
 }
@@ -358,7 +371,7 @@ h1 {
     grid-template-columns: 1fr;
     grid-gap: 20px;
     justify-items: stretch;
-    align-items: start;
+    align-items: stretch;
   }
 }
 @media (min-width: 550px) {
@@ -367,7 +380,7 @@ h1 {
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 992px) {
   .pricing-block {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -443,28 +456,10 @@ h1 {
   font-size: 1.4em;
 }
 .benefits-block-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url(../img/index/benefits.jpeg);
-  background-size: cover;
-
+  background-image: url(../img/index/benefits.jpeg);
   min-height: 100%;
 }
-.first-step {
-  background: url(/img/index/first-step.jpeg);
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.first-step-block {
-  padding: 150px 0px 150px 40px;
-}
-.first-step-block h2 {
-  color: #fff;
-}
-/* ALL */
 @media (min-width: 320px) {
-  .training-services-block,
   .benefits-block {
     display: grid;
     grid-template-columns: 1fr;
@@ -472,30 +467,130 @@ h1 {
     justify-items: center;
     align-items: stretch;
   }
-  .benefits-block,
-  .training-services-block {
+  .benefits-block {
     align-items: stretch;
   }
   .benefits-block-image {
-    width: 80%;
+    width: 100%;
     height: 400px;
+    background-position: center;
+    background-size: cover;
   }
 }
 
-@media (min-width: 550px) {
+@media (min-width: 768px) {
   .benefits-block {
     grid-template-columns: 1fr 1fr;
   }
-}
-
-@media (min-width: 769px) {
-  .training-services-block {
-    grid-template-columns: repeat(2, 1fr);
+  .benefits-block-image {
+    background-position: -600px 0px;
   }
 }
-
 @media (min-width: 992px) {
-  .training-services-block {
-    grid-template-columns: repeat(3, 1fr);
+  .benefits-block-image {
+    background-position: -350px 0px;
   }
+}
+.first-step {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background: url(/img/index/first-step.jpeg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.first-step-block .section-header {
+  color: #fff;
+  text-align: left;
+}
+@media (min-width: 320px) {
+  .first-step-block .section-header {
+    font-size: 2em;
+  }
+}
+@media (min-width: 550px) {
+  .first-step-block .section-header {
+    font-size: 50px;
+  }
+}
+whoiam-block {
+  display: flex;
+  justify-content: center;
+}
+.whoiam-block-image {
+  background: url("../img/index/whoiam.jpeg");
+  background-size: cover;
+  min-height: 400px;
+  width: 100%;
+}
+.whoiam-block .whoiam-block-text h3 {
+  font-size: 1.5em;
+}
+.whoiam-social-media span {
+  font-size: 1.5em;
+  font-weight: 500;
+}
+.whoiam-social-media {
+  display: flex;
+}
+.whoiam-social-media img {
+  margin-left: 15px;
+  width: 30px;
+}
+.whoiam-block-text .btn {
+  background-color: #e0d7d7;
+  color: var(--font-color);
+}
+.whoiam-block-text .btn:hover {
+  background-color: var(--accent-color);
+  color: #fff;
+}
+@media (min-width: 320px) {
+  .whoiam-block {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    justify-items: center;
+    align-items: stretch;
+  }
+}
+@media (min-width: 768px) {
+  .whoiam-block {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+/* .reviews .carousel-inner .carousel-item #lisa-wilson {
+} */
+.reviews .carousel-indicators li {
+  margin-left: 20px;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+}
+.thirty-days .carousel-indicators li {
+  margin-left: 20px;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+}
+footer {
+  background-color: #161719;
+}
+.footer-block {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-block a {
+  color: #fff;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+a:hover {
+  color: blue;
+  text-decoration: underline;
 }
