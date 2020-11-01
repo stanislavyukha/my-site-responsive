@@ -110,16 +110,22 @@ button:focus {
     display: flex;
     justify-content: space-between;
   }
-  .navbar-nav {
-    margin-left: 7%;
-  }
+
   .nav-item .nav-link::after {
     content: "|";
-    margin-left: 20px;
+    margin-left: 10px;
     color: rgba(0, 0, 0, 0.2);
   }
   .nav-item .nav-link-last::after {
     content: "";
+  }
+}
+@media (min-width: 1200px) {
+  .navbar-nav {
+    margin-left: 7%;
+  }
+  .nav-item .nav-link::after {
+    margin-left: 20px;
   }
 }
 h1 {
@@ -362,7 +368,11 @@ h1 {
 .pricing-block-item h3 {
   font-size: 1.5em;
 }
+.pricing-block-item p {
+  line-height: 1.5;
+}
 .pricing-block-item span {
+  display: block;
   font-size: 50px;
 }
 .pricing-block-item .btn {
@@ -564,6 +574,14 @@ whoiam-block {
     grid-gap: 20px;
     justify-items: center;
     align-items: stretch;
+  }
+  .whoiam-block-image {
+    background-position: -50px 0;
+  }
+}
+@media (min-width: 550px) {
+  .whoiam-block-image {
+    background-position: 0 0;
   }
 }
 @media (min-width: 768px) {
