@@ -1,0 +1,81 @@
+.programs {
+  position: relative;
+  background: url(../img/index/push-ups.jpeg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+.programs .container {
+  position: relative;
+}
+.programs::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(23, 35, 57, 0.8);
+}
+.personal-training img {
+  width: 100%;
+}
+section .container .btn {
+  margin-left: 20px;
+}
+.btn-grey {
+  background-color: #919191;
+}
+.btn-grey:hover {
+  color: #fff;
+}
+
+@media (min-width: 320px) {
+  .personal-training .container {
+    text-align: justify;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+}
+@media (min-width: 768px) {
+  .personal-training .container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 320px) {
+  .small-group .container {
+    text-align: justify;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+}
+@media (min-width: 768px) {
+  .small-group .container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 320px) {
+  .nutrition-coaching .container {
+    text-align: justify;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+}
+@media (min-width: 768px) {
+  .nutrition-coaching .container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1200px) {
+  .nutrition-coaching {
+    background: url(../img/index/30-days-bg.jpeg);
+    background-position: right -550px;
+    background-size: cover;
+  }
+}

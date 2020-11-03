@@ -1,0 +1,71 @@
+.real-people-head {
+  position: relative;
+  background: url(../img/index/results-bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+.real-people-head .container {
+  position: relative;
+}
+.real-people-head::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(23, 35, 57, 0.8);
+}
+.results-before-after {
+  background: #f6f6f6;
+}
+.results-item img {
+  width: 100%;
+}
+.results-item p {
+  font-weight: 700;
+  font-size: 1.3em;
+}
+@media (min-width: 320px) {
+  .results-before-after .container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr;
+    align-items: start;
+    justify-items: center;
+  }
+}
+@media (min-width: 550px) {
+  .results-before-after .container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 768px) {
+  .results-before-after .container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.reviews-item img {
+  width: 100%;
+}
+@media (min-width: 320px) {
+  .reviews .container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr;
+  }
+  .reviews .container .reviews-item {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    text-align: justify;
+  }
+}
+@media (min-width: 550px) {
+  .reviews .container .reviews-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .reviews .container .reviews-item img {
+  }
+}

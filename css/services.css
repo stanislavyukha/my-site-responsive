@@ -1,0 +1,46 @@
+.personal-training-head {
+  position: relative;
+  background: url(../img/index/service-measurements.jpeg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+.personal-training-head .container {
+  position: relative;
+}
+.personal-training-head::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(23, 35, 57, 0.8);
+}
+.personal-training-services {
+  background: #fff;
+}
+.features {
+  background: url(../img/index/training-services-bg.png);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: repeat;
+}
+.take-first-step {
+  position: relative;
+  background: url(../img/index/first-step-bg.jpeg);
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+}
+.take-first-step .container {
+  position: relative;
+}
+.take-first-step::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(23, 35, 57, 0.8);
+}

@@ -1,0 +1,141 @@
+body {
+  box-sizing: border-box;
+}
+.about {
+  position: relative;
+  background: url(../img/index/about-bg.jpeg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+.about .container {
+  position: relative;
+}
+.about::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(23, 35, 57, 0.8);
+}
+.about-me {
+  background-color: #f6f6f6;
+}
+.about-me-item img {
+  width: 100%;
+}
+@media (min-width: 320px) {
+  .about-me-block {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr;
+    align-items: stretch;
+    justify-items: center;
+  }
+}
+@media (min-width: 768px) {
+  .about-me-block {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.my-work-item-image {
+  display: flex;
+  justify-content: center;
+}
+.my-work-item-image img {
+  width: 100%;
+  margin-bottom: 40px;
+}
+.my-work-item img {
+  width: 100%;
+}
+@media (min-width: 320px) {
+  .my-work-block {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr;
+    align-items: stretch;
+    justify-items: center;
+  }
+  .my-work-item {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr;
+    align-items: center;
+  }
+}
+@media (min-width: 550px) {
+  .my-work-item {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.pricing-block p {
+  font-size: 1.2em;
+  font-weight: 700;
+}
+.pricing-block-item img {
+  width: 50%;
+}
+
+@media (min-width: 320px) {
+  .my-certification-block {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr;
+  }
+  .my-certification-block img {
+    width: 100%;
+  }
+}
+@media (min-width: 550px) {
+  .my-certification-block {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 992px) {
+  .my-certification-block {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (min-width: 320px) {
+  .follow-block {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr;
+    align-content: center;
+    align-items: center;
+  }
+  .follow-block img {
+    width: 100%;
+  }
+}
+@media (min-width: 550px) {
+  .follow-block {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 992px) {
+  .follow-block {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.take-first-step {
+  position: relative;
+  background: url(../img/index/first-step-bg.jpeg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+.take-first-step .container {
+  position: relative;
+  text-align: center;
+}
+.take-first-step::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(23, 35, 57, 0.8);
+}
