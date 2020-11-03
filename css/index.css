@@ -180,12 +180,18 @@ h1 {
 @media (min-width: 320px) {
   .features-block {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-gap: 20px;
     justify-items: center;
     align-items: stretch;
   }
 }
+@media (min-width: 550px) {
+  .features-block {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 @media (min-width: 769px) {
   .features-block {
     grid-template-columns: repeat(3, 1fr);
