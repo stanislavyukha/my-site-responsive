@@ -174,7 +174,7 @@ h1 {
 .features-item img {
   width: 80%;
   height: auto;
-  margin: 0 auto;
+  margin: 20px auto;
   display: block;
 }
 @media (min-width: 320px) {
